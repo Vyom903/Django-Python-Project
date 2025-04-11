@@ -14,11 +14,11 @@ from pathlib import Path
 import os
 from storages.backends.azure_storage import AzureStorage
 
-DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
-AZURE_ACCOUNT_NAME = 'social1'
-AZURE_CONTAINER = 'mediastore'
-AZURE_CUSTOM_DOMAIN=f"{AZURE_ACCOUNT_NAME}.blob.core.windows.net/"
-AZURE_ACCOUNT_KEY='ZZQf8afy+Jd9DXGbwC5YLtbgsltUntsDillS1PEYhB+AlPCxg+O8zFgzGeT+kOSqv9ykDZQXuhQy+AStl6/rgg=='
+DEFAULT_FILE_STORAGE = ''
+AZURE_ACCOUNT_NAME = ''
+AZURE_CONTAINER = ''
+AZURE_CUSTOM_DOMAIN=f""
+AZURE_ACCOUNT_KEY=''
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -86,23 +86,23 @@ CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'social_app',
-        'USER': 'admin1',
-        'PASSWORD': 'Vyom@1802',
-        'HOST': 'dbsocial.mysql.database.azure.com',
+        'ENGINE': '',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': '3306',
         'OPTIONS': {'ssl':False}
     }
     
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_BACKEND = ''
+EMAIL_HOST = ''
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'facttalkies1705@gmail.com'
-EMAIL_HOST_PASSWORD = 'shivshakti@#1'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 
 
 
